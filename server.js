@@ -15,7 +15,7 @@ const corsOptions = {
 
 };
 app.use(cors({
-  origin:['https://ticket-front-alpha.vercel.app/'],
+  origin:['https://ticket-front-alpha.vercel.app',],
   credentials: true,
 }));
 app.use(express.json());
