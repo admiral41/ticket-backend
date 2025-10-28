@@ -9,11 +9,6 @@ const app = express();
 connectDB();
 
 // Middleware
-const corsOptions = {
-  origin: process.env.CLIENT_URL || 'https://ticket-front-alpha.vercel.app/',
-  credentials: true, 
-
-};
 app.use(cors({
   origin:['https://ticket-front-alpha.vercel.app','http://localhost:5173'],
   credentials: true,
